@@ -1,7 +1,7 @@
 # 🍔 Foody Zone - Frontend
 
 A modern, responsive frontend for Foody Zone food delivery application built with React.js.
-
+URL: https://peaceful-wisp-03478a.netlify.app/
 ## Features
 - 🍽️ Interactive menu browsing
 - 🛒 Real-time cart management
