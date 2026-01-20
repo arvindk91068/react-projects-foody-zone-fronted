@@ -1,0 +1,350 @@
+.payment-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Payment Methods */
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.payment-method {
+  position: relative;
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.payment-method:hover {
+  border-color: #4ecdc4;
+  transform: translateY(-2px);
+}
+
+.payment-method.selected {
+  border-color: #4ecdc4;
+  background: rgba(78, 205, 196, 0.05);
+  box-shadow: 0 5px 20px rgba(78, 205, 196, 0.1);
+}
+
+.payment-method.popular::before {
+  content: 'Popular';
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: #ff6b6b;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.method-icon {
+  width: 40px;
+  height: 40px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4ecdc4;
+}
+
+.method-info {
+  flex: 1;
+}
+
+.method-label {
+  display: block;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 5px;
+}
+
+.popular-badge {
+  font-size: 0.7rem;
+  color: #ff6b6b;
+  font-weight: 700;
+}
+
+.method-radio {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e9ecef;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.radio-dot.active {
+  background: #4ecdc4;
+  transform: scale(1.5);
+}
+
+/* Card Details Form */
+.card-details-form {
+  margin-bottom: 40px;
+}
+
+.form-check {
+  margin: 20px 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  color: #495057;
+}
+
+.checkbox-label input {
+  margin-top: 5px;
+}
+
+/* Card Security */
+.card-security {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #f1f3f5;
+}
+
+.security-badges {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.security-badges img {
+  height: 25px;
+  opacity: 0.7;
+}
+
+.security-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* UPI Details */
+.upi-details {
+  margin-bottom: 40px;
+}
+
+.upi-input-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.upi-input-group input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.upi-input-group input:focus {
+  outline: none;
+  border-color: #4ecdc4;
+}
+
+.verify-btn {
+  background: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 0 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.verify-btn:hover {
+  background: #3db4ac;
+  transform: translateY(-2px);
+}
+
+.upi-apps {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.upi-app {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.upi-app:hover {
+  border-color: #4ecdc4;
+  transform: translateY(-2px);
+}
+
+.upi-app img {
+  width: 40px;
+  height: 40px;
+}
+
+/* COD Message */
+.cod-message {
+  text-align: center;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.message-icon {
+  width: 80px;
+  height: 80px;
+  background: #4ecdc4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 20px;
+}
+
+.cod-message h4 {
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.cod-message p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.cod-note {
+  font-style: italic;
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+/* Terms Section */
+.terms-section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 15px;
+}
+
+.terms-section .checkbox-label {
+  color: #495057;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Security Assurance */
+.security-assurance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.assurance-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.assurance-item svg {
+  color: #4ecdc4;
+  min-width: 40px;
+}
+
+.assurance-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.assurance-text strong {
+  color: #1a1a2e;
+  font-size: 1rem;
+}
+
+.assurance-text span {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Payment Actions */
+.payment-actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.payment-actions button {
+  flex: 1;
+  padding: 18px;
+  font-size: 1rem;
+}
+
+.payment-actions .btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .payment-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .upi-input-group {
+    flex-direction: column;
+  }
+  
+  .verify-btn {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .payment-actions {
+    flex-direction: column;
+  }
+  
+  .security-assurance {
+    grid-template-columns: 1fr;
+  }
+}
